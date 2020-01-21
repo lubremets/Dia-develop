@@ -5,6 +5,10 @@
   align-self: stretch;
   @include centered;
 
+  & li:last-of-type {
+    padding-left: 135px;
+  }
+
   &_link {
     color: white;
   }
@@ -15,11 +19,6 @@
     display: flex;
     list-style-type: none;
     justify-content: center;
-
-    & li:last-of-type {
-      padding-left: 135px;
-    }
-  
   }
 
   &__item {
@@ -65,14 +64,15 @@
 }
 
 @media screen and (max-width: 1449px) {
+  .header__nav {
+
+    & li:last-of-type {
+      padding-left: 35px;
+    }
+  }
+
   .nav {
     margin: 0 auto;
-
-    &__list {
-      & li:last-of-type {
-        padding-left: 35px;
-      }
-    }
 
     &__item {
 
